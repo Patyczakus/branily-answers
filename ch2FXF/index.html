@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            td {
+                padding: 12px;
+                width: 100px;
+                text-align: center;
+                margin: 0;
+            }
+            td:not(.blank) {
+                min-height: 50px;
+            }
+            td.colspan {
+                padding: 3px 12px;
+                min-height: 10px;
+            }
+            td.info0 {
+                background: rgb(65, 184, 65);
+                color: white
+            }
+            td.info1 {
+                background: green;
+                color: white
+            }
+            td.info2 { background: rgb(172, 255, 172) }
+            td.S { background: rgb(171, 255, 138) }
+            td.M { background: rgb(253, 255, 138) }
+            td.B { background: rgb(255, 156, 138) }
+            .b1 { border-right: 3px solid white }
+            .b2 { border-bottom: 3px solid white }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+            <td class="blank"></td> <td class="colspan info0 b2" colspan="3">Ciężkość następstw (jak mogą być groźne) zagrożeń</td>
+            </tr>
+            <tr>
+                <td class="info0 b1">Pradopodobieństwo wystąpienia możliwych następstw zagrożeń</td> <td class="info2">MAŁA</td> <td class="info2">ŚREDNIA</td> <td class="info2">DUŻA</td>
+            </tr>
+            <tr>
+                <td class="info1 b1">MAŁE</td> <td class="S">MAŁE</td> <td class="S">MAŁE</td> <td class="M">ŚREDNIE</td>
+            </tr>
+            <tr>
+                <td class="info1 b1">ŚREDNIE</td> <td class="S">MAŁE</td> <td class="M">ŚREDNIE</td> <td class="B">DUŻE</td>
+            </tr>
+            <tr>
+                <td class="info1 b1">DUŻE</td> <td class="M">ŚREDNIE</td> <td class="B">DUŻE</td> <td class="B">DUŻE</td>
+            </tr>
+        </table>
+    </body>
+</html>
